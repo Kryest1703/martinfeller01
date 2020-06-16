@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <body class="middle">
+        <br />
+        <img style="filter: drop-shadow(0 0 0.85rem black); " src="/static/content/fellerlogo.png">
+        <br />
+        <br />
+        <div class="container2">
+            <img src="/static/content/martinfeller.jpg" class="image">
+            <div class="overlay">
+                <div class="text "><button onclick="location.href='/home'" class="button"><b>HOME</b></button></div>
+                <div class="text2"><button onclick="location.href='/merch'" class="button" disabled><b>MERCH</b></button></div>
+                <div class="text3"><button onclick="location.href='/contact'" class="button"><b>CONTACT</b></button></div>
+            </div>
+        </div>
+        <br />
+        <div class="headtextbox" style="font-size:40px">
+            <address>
+                <strong>Email:</strong>   <a href="mailto:martinfellderofficial@gmail.com">Martinfellderofficial@gmail.com</a><br />
+            </address>
+        </div>
+    </body>
+        {% endblock %}
