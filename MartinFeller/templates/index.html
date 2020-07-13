@@ -7,10 +7,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body class="middle">
+        <img src="/static/content/fellerlogo.png">
         <br />
-        <img style="filter: drop-shadow(0 0 0.85rem black); " src="/static/content/fellerlogo.png">
-        <br />
-        <br>
         <div class="container2">
             <img src="/static/content/martinfeller.jpg" class="image">
             <div class="overlay">
@@ -20,6 +18,7 @@
             </div>
         </div>
         <br />
+        <b style="font-size: 50px; color: white">LATEST WORK</b>
         <div>
             {% for i in range(len): %}
             <button onclick="location.href='/{{rowlist[i][0]}}'" id="show" style="background-color: transparent; border: none; width: 80%; height: 40%;"><img src="/static/content/{{rowlist[i][2]}}" class="image2" /></button>

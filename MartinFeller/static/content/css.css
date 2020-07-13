@@ -1,14 +1,13 @@
 
-
 body {
-    background-image: radial-gradient(#CCCCCC 20%, transparent 20%), radial-gradient(#501F3A 20%, transparent 20%);
-    background-color: #0F292F;
+    background-image: linear-gradient(50deg, #ffa8e1 26.32%, #6b89ff 26.32%, #6b89ff 50%, #ffa8e1 50%, #ffa8e1 76.32%, #6b89ff 76.32%, #6b89ff 100%);
+    background-size: 190.00px 226.43px;
     background-position: 0 0, 50px 50px;
     background-size: 15vw 15vw;
     padding-top: 0px;
     font-family: 'Quicksand', verdana;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: auto;
     margin-top: 50px;
 }
@@ -19,7 +18,7 @@ img {
 }
 
 .box {
-    border-style: solid;
+    border-style: dotted solid;
     margin: auto;
 }
 
@@ -37,21 +36,20 @@ img {
 }
 
 .image {
-    border-style: inset;
-    border-color: #14A098;
-    border-width: 1vw;
+    border-style: solid;
+    border-color: #ffda45;
+    border-width: 1.5vw;
     display: block;
     width: 69%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-
 }
 
 .image2 {
-    border-style: inset;
-    border-color: #14A098;
-    border-width: 1vw;
+    border-style: solid;
+    border-color: #ffe370;
+    border-width: 1.2vw;
     display: block;
     width: 40%;
     margin-left: auto;
@@ -61,8 +59,8 @@ img {
 }
 
     .image2:hover {
-        border-style: inset;
-        border-color: #14A098;
+        border-style: solid;
+        border-color: #57ff8f;
         border-width: 1vw;
         display: block;
         width: 42%;
@@ -75,7 +73,7 @@ img {
 
 
 .image3{
-    border-style: inset;
+    border-style: solid;
     border-color: #14A098;
     border-width: 1vw;
     display: block;
@@ -86,7 +84,7 @@ img {
 }
 
     .image3:hover {
-        border-style: inset;
+        border-style: solid;
         border-color: #14A098;
         border-width: 1vw;
         display: block;
@@ -97,6 +95,17 @@ img {
         transform: rotate(180deg);
     }
 
+.image4 {
+    border-style: solid;
+    border-color: #ffe370;
+    border-width: 1.2vw;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    transition: ease 1s;
+}
 
 .overlay {
     font-family: 'Quicksand', verdana;
@@ -146,9 +155,9 @@ iframe {
 }
 
 .container2:hover .overlay {
-    border-style: outset;
+    border-style: solid;
     border-color: #14A098;
-    border-width: 0.5vw;
+    border-width: 1.5vw;
     opacity: 0.9;
     bottom: 0%;
     height: 100%;
@@ -169,6 +178,18 @@ iframe {
     box-shadow: -4px 6px 0px 5px rgba(0,0,0,0.75);
 }
 
+
+#musictextbox {
+    border-style: dotted;
+    border-color: #14A098;
+    color: black;
+    border-radius: 1%;
+    background-color: white;
+    opacity: 0.8;
+    border-width: 0.5vw;
+    width: 60%;
+    margin-left: 20%;
+}
 
 .text {
     color: black;
@@ -240,12 +261,13 @@ iframe {
     font-size: 2vw;
 }
 
+
 .button {
     font-family: 'Quicksand', verdana;
     background-color: transparent;
     border: none;
     text-align: center;
-    font-size: 45px;
+    font-size: 50px;
     margin-left: 1% 1%;
     opacity: 0.9;
     transition: ease 1s;
