@@ -72,7 +72,7 @@ def checkout():
         message='Checkout'
     )
 
-@app.route('/<int:song>')
+@app.route('/<string:song>')
 def music(song):
     conn = sqlite3.connect("C:\\Users\\kevin\\source\\repos\\MartinFeller\\MartinFeller\\MartinFeller\\martinfeller.db")
     c = conn.cursor()
