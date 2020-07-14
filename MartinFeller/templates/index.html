@@ -18,7 +18,7 @@
             </div>
         </div>
         <br />
-        <b style="font-size: 50px; color: white">LATEST WORK</b>
+        <b id="latestwork" style="color: white">LATEST WORK</b>
         <div>
             {% for i in range(len): %}
             <button onclick="location.href='/{{rowlist[i][0]}}'" id="show" style="background-color: transparent; border: none; width: 80%; height: 40%;"><img src="/static/content/{{rowlist[i][2]}}" class="image2" /></button>
