@@ -20,7 +20,7 @@
         <br />
         <b id="latestwork" style="color: white">LATEST WORK</b>
         <div>
-            {% for i in range(len): %}
+            {% for i in range(len-1, -1, -1): %}
             <button onclick="location.href='/{{rowlist[i][0]}}'" id="show" style="background-color: transparent; border: none; width: 80%; height: 40%;"><img src="/static/content/{{rowlist[i][2]}}" class="image2" /></button>
             {% endfor %}
         </div>

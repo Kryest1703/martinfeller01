@@ -86,5 +86,6 @@ def music(song):
         spotifyembed =  data[3],
         youtubeembed =  data[4],
         year=datetime.now().year,
-        message='Music'
+        message='Music',
+        song_description = data[5]
     )
