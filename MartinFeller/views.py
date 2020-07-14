@@ -76,7 +76,8 @@ def checkout():
 def music(song):
     conn = sqlite3.connect("C:\\Users\\kevin\\source\\repos\\MartinFeller\\MartinFeller\\MartinFeller\\martinfeller.db")
     c = conn.cursor()
-    c.execute('SELECT * FROM songs WHERE songid=?', str(song))
+    # [str(song)] was used to prevent tuple supply issues, previous error was: incorrect number of bindings supplied.
+    c.execute('SELECT * FROM songs WHERE songid=?', [str(song)])
     data = (c.fetchone())
     return render_template(
         'music.html',
