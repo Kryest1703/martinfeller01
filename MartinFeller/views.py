@@ -11,7 +11,7 @@ import sqlite3
 @app.route('/')
 @app.route('/home')
 def home():
-    conn = sqlite3.connect("C:\\Users\\kevin\\source\\repos\\MartinFeller\\MartinFeller\\MartinFeller\\martinfeller.db")
+    conn = sqlite3.connect("martinfeller.db")
     c = conn.cursor()
     """Renders the home page."""
     c.execute('SELECT * FROM songs')
@@ -74,7 +74,7 @@ def checkout():
 
 @app.route('/<string:song>')
 def music(song):
-    conn = sqlite3.connect("C:\\Users\\kevin\\source\\repos\\MartinFeller\\MartinFeller\\MartinFeller\\martinfeller.db")
+    conn = sqlite3.connect("martinfeller.db")
     c = conn.cursor()
     # [str(song)] was used to prevent tuple supply issues, previous error was: incorrect number of bindings supplied.
     c.execute('SELECT * FROM songs WHERE songid=?', [str(song)])
